@@ -1,0 +1,143 @@
+/* Constants  - Changes here affect the entire template */
+/* Fonts used throughout the site */
+/* The base color palette of the site.  Skip to next section if you are only trying to do a theme swap */
+/* Automatic Darkeners */
+/* Automatic Lighteners */
+/* Declarations of theme colors.  Since these inherit from the color palette, these have to be declared after */
+/* The colors that dictate the gradient */
+/* Coloring - Easy to use variables throughout the site that will grab the interpretations we made above. */
+.fgPrimary { color: #e81d75; }
+
+.bgPrimary { background-color: #31006f; }
+
+.fgSecondary { color: #31006f; }
+
+.bgSecondary { background-color: #3cc2d2; }
+
+.fgPink { color: #e81d75; }
+
+.bgPink { background-color: #e81d75; }
+
+.fgPinkD { color: #900f47; }
+
+.bgPinkD { background-color: #900f47; }
+
+.fgPinkL { color: #f17aae; }
+
+.bgPinkL { background-color: #f17aae; }
+
+.fgPurple { color: #31006f; }
+
+.bgPurple { background-color: #31006f; }
+
+.fgPurpleD { color: #040009; }
+
+.bgPurpleD { background-color: #040009; }
+
+.fgPurpleL { color: #5e00d5; }
+
+.bgPurpleL { background-color: #5e00d5; }
+
+.fgBlue { color: #3cc2d2; }
+
+.bgBlue { background-color: #3cc2d2; }
+
+.fgBlueD { color: #207d89; }
+
+.bgBlueD { background-color: #207d89; }
+
+.fgBlueL { color: #8fdce5; }
+
+.bgBlueL { background-color: #8fdce5; }
+
+.fgGreen { color: #b3ce35; }
+
+.bgGreen { background-color: #b3ce35; }
+
+.fgGreenD { color: #6d7e1f; }
+
+.bgGreenD { background-color: #6d7e1f; }
+
+.fgGreenL { color: #d2e287; }
+
+.bgGreenL { background-color: #d2e287; }
+
+.fgYellow { color: #e8941d; }
+
+.bgYellow { background-color: #e8941d; }
+
+.fgYellowD { color: #905b0f; }
+
+.bgYellowD { background-color: #905b0f; }
+
+.fgYellowL { color: #f1c07a; }
+
+.bgYellowL { background-color: #f1c07a; }
+
+.fgOrange { color: #e85b1d; }
+
+.bgOrange { background-color: #e85b1d; }
+
+.fgOrangeD { color: #90360f; }
+
+.bgOrangeD { background-color: #90360f; }
+
+.fgOrangeL { color: #f19e7a; }
+
+.bgOrangeL { background-color: #f19e7a; }
+
+.fgRed { color: #e81d1d; }
+
+.bgRed { background-color: #e81d1d; }
+
+.fgRedD { color: #900f0f; }
+
+.bgRedD { background-color: #900f0f; }
+
+.fgRedL { color: #f17a7a; }
+
+.bgRedL { background-color: #f17a7a; }
+
+.fgWhite { color: white; }
+
+.bgWhite { background-color: white; }
+
+.fgWhiteD { color: #cccccc; }
+
+.bgWhiteD { background-color: #cccccc; }
+
+.fgWhiteL { color: white; }
+
+.bgWhiteL { background-color: white; }
+
+.fgBlack { color: black; }
+
+.bgBlack { background-color: black; }
+
+.fgBlackD { color: black; }
+
+.bgBlackD { background-color: black; }
+
+.fgBlackL { color: #333333; }
+
+.bgBlackL { background-color: #333333; }
+
+/* Our gradient instantiation. */
+.ysGradient { background: #e81d75; background: -moz-linear-gradient(left, #e81d75 0%, #31006f 100%); background: -webkit-linear-gradient(left, #e81d75 0%, #31006f 100%); background: linear-gradient(to right, #e81d75 0%, #31006f 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gradientLeft', endColorstr='$gradientRight',GradientType=1 ); }
+
+/* Text - Focus primarily on the style and spacing of text */
+h1.ys { font-family: "Poppins", sans-serif; font-size: 8em; font-weight: 600; letter-spacing: -2.5; padding-top: .1em; line-height: .75em; }
+h1.ys span { font-size: .25em; font-weight: 100; letter-spacing: -.01em; line-height: 1.5em; padding-left: .2em; display: block; }
+
+h2.ys { font-family: "Poppins", sans-serif; font-size: 4.5em; font-weight: 200; letter-spacing: -1; }
+h2.ys span { color: black; font-size: 0.4em; font-weight: 700; display: block; line-height: 0.1em; }
+
+h3.ys { font-family: "Poppins", sans-serif; font-size: 2.0em; font-weight: 700; }
+
+p.ys { color: black; font-size: 1.3em; font-weight: 300; letter-spacing: 1.9; line-height: 1.6; }
+@media (pointer: coarse) { p.ys { color: #e81d75; font-size: 3.0em; } }
+
+/* Layout - Components built to set or aid in layout */
+.ys-hero-text { margin: 50px 0px 50px 0px; padding: 3em 0 3em 5em; }
+
+div.sample { width: 100px; height: 40px; line-height: 40px; text-align: center; }

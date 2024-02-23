@@ -1,0 +1,195 @@
+/* Constants  - Changes here affect the entire template */
+
+	/* Fonts used throughout the site */
+	$fPrimary: 'Poppins', sans-serif;
+	$fSecondary: 'Poppins', sans-serif;
+
+	/* The base color palette of the site.  Skip to next section if you are only trying to do a theme swap */
+	$cPink: 		#e81d75;
+	$cPurple: 	#31006f;
+	$cBlue: 		#3cc2d2;
+	$cGreen:		#b3ce35;
+	$cYellow:		#e8941d;
+	$cOrange:	#e85b1d;
+	$cRed:			#e81d1d;
+	$cWhite: 		#ffffff;
+	$cBlack:		#000000;
+
+	/* Automatic Darkeners */
+	$cPinkD: 			darken($cPink, 20%);
+	$cPurpleD: 		darken($cPurple, 20%);
+	$cBlueD: 			darken($cBlue, 20%);
+	$cGreenD: 		darken($cGreen, 20%);
+	$cYellowD: 		darken($cYellow, 20%);
+	$cOrangeD: 	darken($cOrange, 20%);
+	$cRedD: 			darken($cRed, 20%);
+	$cWhiteD: 		darken($cWhite, 20%);
+	$cBlackD: 		darken($cBlack, 20%);
+
+	/* Automatic Lighteners */
+	$cPinkL: 			lighten($cPink, 20%);
+	$cPurpleL: 		lighten($cPurple, 20%);
+	$cBlueL: 			lighten($cBlue, 20%);
+	$cGreenL: 		lighten($cGreen, 20%);
+	$cYellowL:		lighten($cYellow, 20%);
+	$cOrangeL: 		lighten($cOrange, 20%);
+	$cRedL: 			lighten($cRed, 20%);
+	$cWhiteL: 		lighten($cWhite, 20%);
+	$cBlackL: 			lighten($cBlack, 20%);
+
+	/* Declarations of theme colors.  Since these inherit from the color palette, these have to be declared after */
+	$cFGPrimary: $cPink;
+	$cBGPrimary: $cPurple;
+	$cFGSecondary: $cPurple;
+	$cBGSecondary: $cBlue;
+
+	/* The colors that dictate the gradient */ 
+	$gradientLeft: $cFGPrimary;
+	$gradientRight: $cFGSecondary;
+
+/* Coloring - Easy to use variables throughout the site that will grab the interpretations we made above. */
+	.fgPrimary { color: $cFGPrimary; }
+	.bgPrimary { background-color: $cBGPrimary; }
+
+	.fgSecondary { color: $cFGSecondary; }
+	.bgSecondary { background-color: $cBGSecondary; }
+
+	.fgPink { color: $cPink; }
+	.bgPink { background-color: $cPink; }
+	.fgPinkD { color: $cPinkD; }
+	.bgPinkD { background-color: $cPinkD; }
+	.fgPinkL { color: $cPinkL; }
+	.bgPinkL { background-color: $cPinkL; }
+
+	.fgPurple { color: $cPurple; }
+	.bgPurple { background-color: $cPurple; }
+	.fgPurpleD { color: $cPurpleD; }
+	.bgPurpleD { background-color: $cPurpleD; }
+	.fgPurpleL { color: $cPurpleL; }
+	.bgPurpleL { background-color: $cPurpleL; }
+
+	.fgBlue { color: $cBlue; }
+	.bgBlue { background-color: $cBlue; }
+	.fgBlueD { color: $cBlueD; }
+	.bgBlueD { background-color: $cBlueD; }
+	.fgBlueL { color: $cBlueL; }
+	.bgBlueL { background-color: $cBlueL; }
+
+	.fgGreen { color: $cGreen; }
+	.bgGreen { background-color: $cGreen; }
+	.fgGreenD { color: $cGreenD; }
+	.bgGreenD { background-color: $cGreenD; }
+	.fgGreenL { color: $cGreenL; }
+	.bgGreenL { background-color: $cGreenL; }
+
+	.fgYellow { color: $cYellow; }
+	.bgYellow { background-color: $cYellow; }
+	.fgYellowD { color: $cYellowD; }
+	.bgYellowD { background-color: $cYellowD; }
+	.fgYellowL { color: $cYellowL; }
+	.bgYellowL { background-color: $cYellowL; }
+
+	.fgOrange { color: $cOrange; }
+	.bgOrange { background-color: $cOrange; }
+	.fgOrangeD { color: $cOrangeD; }
+	.bgOrangeD { background-color: $cOrangeD; }
+	.fgOrangeL { color: $cOrangeL; }
+	.bgOrangeL { background-color: $cOrangeL; }
+
+	.fgRed { color: $cRed; }
+	.bgRed { background-color: $cRed; }
+	.fgRedD { color: $cRedD; }
+	.bgRedD { background-color: $cRedD; }
+	.fgRedL { color: $cRedL; }
+	.bgRedL { background-color: $cRedL; }
+
+	.fgWhite { color: $cWhite; }
+	.bgWhite { background-color: $cWhite; }
+	.fgWhiteD { color: $cWhiteD; }
+	.bgWhiteD { background-color: $cWhiteD; }
+	.fgWhiteL { color: $cWhiteL; }
+	.bgWhiteL { background-color: $cWhiteL; }
+
+	.fgBlack { color: $cBlack; }
+	.bgBlack { background-color: $cBlack; }
+	.fgBlackD { color: $cBlackD; }
+	.bgBlackD { background-color: $cBlackD; }
+	.fgBlackL { color: $cBlackL; }
+	.bgBlackL { background-color: $cBlackL; }
+
+
+	/* Our gradient instantiation. */
+
+	.ysGradient {
+		background: $gradientLeft;
+		background: -moz-linear-gradient(left, $gradientLeft 0%, $gradientRight 100%);
+		background: -webkit-linear-gradient(left, $gradientLeft 0%,$gradientRight 100%);
+		background: linear-gradient(to right, $gradientLeft 0%,$gradientRight 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradientLeft', endColorstr='$gradientRight',GradientType=1 );
+	}
+
+/* Text - Focus primarily on the style and spacing of text */
+	h1.ys {
+		font-family: $fPrimary;
+		font-size: 8em;
+		font-weight: 600;
+		letter-spacing: -2.5;
+		padding-top: .1em;
+		line-height: .75em;
+		span {
+			font-size: .25em;
+			font-weight: 100;
+			letter-spacing: -.01em;
+			line-height: 1.5em;
+			padding-left: .2em;
+			display: block;
+		}
+	}
+
+	h2.ys {
+		font-family: $fPrimary;
+		font-size: 4.5em;
+		font-weight: 200;
+		letter-spacing: -1;
+		span {
+			color: $cBlack;
+			font-size: 0.4em;
+			font-weight: 700;
+			display: block;
+			line-height: 0.1em;
+		}
+	}
+
+	h3.ys {
+		font-family: $fPrimary;
+		font-size: 2.0em;
+		font-weight: 700;	
+	}
+
+$vwSmall: 768px;
+
+	p.ys {
+		color: $cBlack;
+		font-size: 1.3em;
+		@media (pointer:coarse) {
+			color: $cPink;
+			font-size: 3.0em;
+		}
+		font-weight: 300;
+		letter-spacing: 1.9;
+		line-height: 1.6;
+	}
+
+/* Layout - Components built to set or aid in layout */
+	.ys-hero-text {
+		margin: 50px 0px 50px 0px;
+		padding: 3em 0 3em 5em;
+	}
+
+	div.sample {
+		width: 100px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+	}
+
